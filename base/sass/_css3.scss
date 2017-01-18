@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+//文件: CSS3.scss
+//WebSite    : 2016-11-11
+//LastChange : 2016-11-11
+
+@mixin border-radius($radius) {
+   -moz-border-radius: if(unitless($radius), $radius + px, $radius);
+     -o-border-radius: if(unitless($radius), $radius + px, $radius);
+-webkit-border-radius: if(unitless($radius), $radius + px, $radius);
+        border-radius: if(unitless($radius), $radius + px, $radius);
+}
+
+@mixin box-shadow($shadow...) {
+     -moz-box-shadow: $shadow;
+       -o-box-shadow: $shadow; 
+  -webkit-box-shadow: $shadow; 
+          box-shadow: $shadow;
+}
+
+@mixin text-shadow($shadow...) {
+     -moz-text-shadow: $shadow;
+       -o-text-shadow: $shadow; 
+  -webkit-text-shadow: $shadow; 
+          text-shadow: $shadow;
+}
+
+@mixin box-sizing($boxmodel) {
+     -moz-box-sizing: $boxmodel;
+       -o-box-sizing: $boxmodel;
+  -webkit-box-sizing: $boxmodel;
+          box-sizing: $boxmodel;
+}
+
+@mixin gradient($content) {
+     background:-webkit-linear-gradient($content);
+     background:-o-linear-gradient($content);
+     background:-moz-linear-gradient($content);
+     background:linear-gradient($content);
+}
+
+@mixin transform($transform...) {
+      -moz-transform: $transform;
+        -o-transform: $transform;
+   -webkit-transform: $transform;
+           transform: $transform;
+}
+
+@mixin transition($transition...) {
+      -moz-transition: $transition;
+        -o-transition: $transition;
+   -webkit-transition: $transition;
+           transition: $transition;
+}
+
+@mixin animation($animation...) {
+      -moz-animation: $animation;
+        -o-animation: $animation;
+   -webkit-animation: $animation;
+           animation: $animation;
+}
+
+@mixin animation-delay($time) {
+      -moz-animation-delay: $time;
+        -o-animation-delay: $time;
+   -webkit-animation-delay: $time;
+           animation-delay: $time;
+}
+
+@mixin keyframes($keyframes) {
+      @-moz-keyframes #{$keyframes} {@content};
+        @-o-keyframes #{$keyframes} {@content};
+   @-webkit-keyframes #{$keyframes} {@content};
+           @keyframes #{$keyframes} {@content}; 
+}
+
+

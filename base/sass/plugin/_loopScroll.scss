@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+@mixin loop-scroll($lSW: 1240px, $lSH: 90px, $lBtnL: 7px, $rBtnR: 7px, $btnT: 39px, $lSIW: 1200px, $lSIH: 90px, $lSIML: 20px, $liW: 232px, $liH: 90px, $liMR: 10px) {
+	width: $lSW; height: $lSH; position:relative;
+	.loop-left-btn,.loop-right-btn{ position:absolute; top: $btnT;}
+	.loop-left-btn{ left: $lBtnL;}
+	.loop-right-btn{ right: $rBtnR;}
+	.loop-scroll-inner{ width: $lSIW; height: $lSIH; overflow: hidden; margin-left: $lSIML;
+		ul{ width: 9999999px;}
+		li{ @extend %left; width: $liW; height: $liH; margin-right: $liMR; overflow: hidden;}
+	}	
+}

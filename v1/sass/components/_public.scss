@@ -1,0 +1,18 @@
+/**
+ * 变量
+ */
+@import "components/vars";
+/**
+ * 引用雪碧图示例
+ */
+@import '../images/icons_sprite/sprite';
+@import '../base/sass/iconName';
+
+body{ background-color: #f2f2f2; min-width: 1240px;}
+.w1240{ width: 1240px; margin: 0 auto;}
+.block-w970{ width: 970px;}
+.block-w260{ width: 260px;}
+%blank{ display: block; clear: both; overflow: hidden;}
+.blank10{ @extend %blank; height: 10px;}
+.blank20{ @extend %blank; height: 20px;}
+.blank10{ @extend %blank; height: 10px;}

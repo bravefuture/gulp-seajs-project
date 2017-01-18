@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "This is a project!",
+  "homepage": "",
+  "scripts": {
+    "start": "npm link gulp gulp-seajs-combine gulp-uglify"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "license": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-seajs-combine": "^0.3.3",
+    "gulp-uglify": "^2.0.0"
+  }
+}
